@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+  }
+  html,
+  body {
+  background: linear-gradient(to left, #43cea2, #185a9d);
+
+  }
+  
+  .navbar {
+    height: 55px;
+    position: fixed;
+    width: 100%;
+    z-index:1;
+  }
+  
+  .navbar .nav-item {
+    float: right;
+    padding: 1rem;
+    z-index:1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #ffffff;
+  }
+  
+  .navbar .username {
+    float: left;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .animation-area { position:absolute; z-index:0; top:0 left:0; }
+  .second-layer{ position:absolute; z-index:1; top:0 left:0; }
+  .animation-area {
+    width: 100%;
+    height: 100vh;
+  }
+  .box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .box-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+  }
+  .box-area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+  }
+  .box-area li:nth-child(2) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+  }
+  .box-area li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+  }
+  .box-area li:nth-child(4) {
+    left: 42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+  }
+  .box-area li:nth-child(5) {
+    left: 65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+  }
+  .box-area li:nth-child(6) {
+    left: 15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+  }
+  @keyframes animate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-800px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
+
+  .landing-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .landing-section .me-text {
+    font-size: 4rem;
+    margin-bottom: 0rem;
+  }
+  
+  .landing-section .me-para {
+    padding: 1rem 4rem;
+    color: white;
+  }
+  
+  .landing-section .link-icon {
+    margin: 0 0.6rem;
+  }
+  
+  .down-arrow {
+    position: absolute;
+    bottom: 2rem;
+    z-index:1
+  }
+  
+  .left-blob {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index:1; 
+  }
+  
+  .right-blob {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index:1; 
+  }
+  
+  #about-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  #about-section .experience-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    color: #565252;
+    margin: 0 1rem;
+  }
+  
+  /* #about-section .experience-section .count {
+    font-size: 4rem;
+    color: white;
+  }
+  
+  #about-section .specialisation-section {
+    width:50%;
+  } */
+  
+  #about-section .specialisation-section .specialisation-heading {
+    color: white;
+    font-size: 1.5rem;
+  }
+  .small{
+    color:white;
+  }
+  .specialisation-cards {
+    margin-top: 1rem;
+    display: flex;
+  }
+  
+  .specialisation-card {
+    background-color: #10ed8b;
+    color: #03301c;
+    padding: 1rem;
+    margin-right: 1rem;
+    height: 16rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.2s ease-in-out all;
+  }
+  
+  .specialisation-card:hover {
+    background-color: #03301c;
+    color: #10ed8b;
+  }
+  .specialisation-card .stack-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .stack-icon {
+    transition: 0.2s ease-in-out all;
+  
+    opacity: 0;
+  }
+  .specialisation-card:hover .stack-icon {
+    opacity: 1;
+  }
+  
+  .specialisation-card .detail {
+    font-weight: bold;
+    padding: 0.6rem 0;
+  }
+  .me-text{
+    color: #ffffff;
+  }
