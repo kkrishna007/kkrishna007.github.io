@@ -118,7 +118,7 @@
   .stack-icon {
     transition: 0.2s ease-in-out all;
   
-    opacity: 0;
+    opacity: 0.75;
   }
   .specialisation-card:hover .stack-icon {
     opacity: 1;
